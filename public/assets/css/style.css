@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #05668d, #028090, #00a896, #02c39a);
+}
+
+.navbar, .modal-header, .card-header {
+    background-color: #17252a;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover, .form-check-label:hover, .form-check-input:hover {
+    color: #cac8c8;
+}
+
+#signup-title:hover {
+    color: #ffffff;
+    cursor: default;
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-body, .modal-body, .list-group-item {
+    /* styled with background green and white text */
+    /* background-color: #00a896;
+    color: #ffffff; */
+
+    background-color: #ffffff;
+    
+}
+
+.main-table-head {
+    /* background-color: #2b7a78; */
+    background-color: #05668d;
+    color: #ffffff;
+}
+
+.btn {
+    background-color: #05668d;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #00505a;
+}
+
+.list-group-item {
+    /* border-color: #ffffff; */
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.main-div {
+    margin: 30px 0px 15px 0px;
+}
+
+#main-table {
+    overflow: auto;
+    max-height: 350px;
+}
+
+#signup-submit {
+    margin-top: 20px;
+}
+
+#modal-signup-btn {
+    margin-top: 20px;
+}
+
+#profile-image {
+    height: 200px;
+    width: 200px;
+}
+
+#profile-card {
+    border: 3px;
+    border-style: solid;
+    border-color: #17252a;
+    padding: 10px;
+    background-color: #05668d;
+    color: #ffffff;
+}
+
+#skills-list {
+    overflow: auto;
+    max-height: 250px;
+}
+
+.profile-margin {
+    margin-top: 16px;
+}
+
+#prof-skills-hd {
+    margin-top: 20px;
+}
+
+.dropdown-toggle {
+    margin: 0px 10px;
+}
+
+#search {
+    margin-bottom: 20px;
+}
+
+#error-modal-head {
+    background-color: #ff0000;
+}
+
+#error-modal-title {
+    color: #ffffff;
+}
+
+#error-msg {
+    color: #ff0000;
+}

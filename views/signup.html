@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Everyday Jo Jobs</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#" id="signup-title">Everyday Jo Jobs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="/">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link active" href="#">Sign Out</a>
+            </div>
+        </div> -->
+    </nav>
+
+    <main role="main" class="container-fluid main-div">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header text-center">
+                        Sign Up
+                    </div>
+                    <div class="card-body">
+
+                        <form>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="signup-email">Email</label>
+                                    <input type="email" class="form-control" id="signup-email" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="signup-password">Password</label>
+                                    <input type="password" class="form-control" id="signup-password" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="signup-name">Name</label>
+                                    <input type="text" class="form-control" id="signup-name" placeholder="John Smith">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="signup-phone">Phone</label>
+                                    <input type="number" class="form-control" id="signup-phone" placeholder="816-555-1234">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputState">State</label>
+                                    <input type="text" class="form-control" id="inputState" placeholder="State">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputUrl">Image URL</label>
+                                    <input type="text" class="form-control" id="inputUrl" placeholder="Image URL">
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    Pick your skills
+                                </div>
+                                <div class="card-body">
+
+                                    <!-- <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="baysitting">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Babysitting</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="car-detailing">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Car Detailing</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="car-washing">
+                                                    <label class="form-check-label" for="inlineCheckbox3">Car Washing</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="dog-grooming">
+                                                    <label class="form-check-label" for="inlineCheckbox4">Dog Grooming</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="dog-walking">
+                                                    <label class="form-check-label" for="inlineCheckbox5">Dog Walking</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="dog-watching">
+                                                    <label class="form-check-label" for="inlineCheckbox6">Dog Watching</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="fence-install">
+                                                    <label class="form-check-label" for="inlineCheckbox7">Fence Install/Repair</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="guitar-lessons">
+                                                    <label class="form-check-label" for="inlineCheckbox8">Guitar Lessons</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="gutter-cleaning">
+                                                    <label class="form-check-label" for="inlineCheckbox9">Gutter Cleaning</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="handyman">
+                                                    <label class="form-check-label" for="inlineCheckbox10">Handyman</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="house-cleaning">
+                                                    <label class="form-check-label" for="inlineCheckbox11">House Cleaning</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="landscaping">
+                                                    <label class="form-check-label" for="inlineCheckbox12">Landscaping</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="lawn-care">
+                                                    <label class="form-check-label" for="inlineCheckbox13">Lawn Care</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="moving-assistance">
+                                                    <label class="form-check-label" for="inlineCheckbox14">Moving Assistance</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="moving-assistance-truck">
+                                                    <label class="form-check-label" for="inlineCheckbox15">Moving Assistance (with truck)</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox16" value="painting-artistic">
+                                                    <label class="form-check-label" for="inlineCheckbox16">Painting - Artistic</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox17" value="painting-general">
+                                                    <label class="form-check-label" for="inlineCheckbox17">Painting - General</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox18" value="pest-removal">
+                                                    <label class="form-check-label" for="inlineCheckbox18">Pest Removal</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox19" value="photographer">
+                                                    <label class="form-check-label" for="inlineCheckbox19">Photographer</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox20" value="sewing">
+                                                    <label class="form-check-label" for="inlineCheckbox20">Sewing</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox21" value="upholstery-repair">
+                                                    <label class="form-check-label" for="inlineCheckbox21">Upholstery Repair</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-2">
+                                                <label for="signup-amt">Hourly Rate</label>
+                                                <input type="number" class="form-control" step="0.01" id="signup-amt" placeholder="10.00">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn" id="signup-submit">Submit</button>
+                                    </div> -->
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="">Choose Your Skills</label>
+                                            <select class="custom-select skillOne">
+                                                <option selected>-</option>
+                                                <option value="Babysitting">Babysitting</option>
+                                                <option value="Car Detailing">Car Detailing</option>
+                                                <option value="Car Washing">Car Washing</option>
+                                                <option value="Dog Grooming">Dog Grooming</option>
+                                                <option value="Dog Walking">Dog Walking</option>
+                                                <option value="Dog Watching">Dog Watching</option>
+                                                <option value="Fence Install/Repair">Fence Install/Repair</option>
+                                                <option value="Guitar Lessons">Guitar Lessons</option>
+                                                <option value="Gutter Cleaning">Gutter Cleaning</option>
+                                                <option value="Handyman">Handyman</option>
+                                                <option value="House Keeping">House Keeping</option>
+                                                <option value="Landscaping">Landscaping</option>
+                                                <option value="Lawn Care">Lawn Care</option>
+                                                <option value="Moving Assistance">Moving Assistance</option>
+                                                <option value="Moving Assistance with Truck">Moving Assistance with Truck</option>
+                                                <option value="Painting - Artistic">Painting - Artistic</option>
+                                                <option value="Painting - General">Painting - General</option>
+                                                <option value="Pest Removal">Pest Removal</option>
+                                                <option value="Photographer">Photographer</option>
+                                                <option value="Sewing">Sewing</option>
+                                                <option value="Upholstery Repair">Upholstery Repair</option>
+                                                <option value="Professional Hugging">Professional Hugging</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="wageOne">Hourly Rate</label>
+                                            <input type="number" class="form-control" id="wageOne" placeholder="10.00">
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="">Choose Your Skills</label>
+                                            <select class="custom-select skillTwo">
+                                                <option selected id="skillTwo">-</option>
+                                                <option selected>-</option>
+                                                <option value="Babysitting">Babysitting</option>
+                                                <option value="Car Detailing">Car Detailing</option>
+                                                <option value="Car Washing">Car Washing</option>
+                                                <option value="Dog Grooming">Dog Grooming</option>
+                                                <option value="Dog Walking">Dog Walking</option>
+                                                <option value="Dog Watching">Dog Watching</option>
+                                                <option value="Fence Install/Repair">Fence Install/Repair</option>
+                                                <option value="Guitar Lessons">Guitar Lessons</option>
+                                                <option value="Gutter Cleaning">Gutter Cleaning</option>
+                                                <option value="Handyman">Handyman</option>
+                                                <option value="House Keeping">House Keeping</option>
+                                                <option value="Landscaping">Landscaping</option>
+                                                <option value="Lawn Care">Lawn Care</option>
+                                                <option value="Moving Assistance">Moving Assistance</option>
+                                                <option value="Moving Assistance with Truck">Moving Assistance with Truck</option>
+                                                <option value="Painting - Artistic">Painting - Artistic</option>
+                                                <option value="Painting - General">Painting - General</option>
+                                                <option value="Pest Removal">Pest Removal</option>
+                                                <option value="Photographer">Photographer</option>
+                                                <option value="Sewing">Sewing</option>
+                                                <option value="Upholstery Repair">Upholstery Repair</option>
+                                                <option value="Professional Hugging">Professional Hugging</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="wageTwo">Hourly Rate</label>
+                                            <input type="number" class="form-control" id="wageTwo" placeholder="10.00">
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="">Choose Your Skills</label>
+                                            <select class="custom-select skillThree">
+                                                <option selected>-</option>
+                                                <option value="Babysitting">Babysitting</option>
+                                                <option value="Car Detailing">Car Detailing</option>
+                                                <option value="Car Washing">Car Washing</option>
+                                                <option value="Dog Grooming">Dog Grooming</option>
+                                                <option value="Dog Walking">Dog Walking</option>
+                                                <option value="Dog Watching">Dog Watching</option>
+                                                <option value="Fence Install/Repair">Fence Install/Repair</option>
+                                                <option value="Guitar Lessons">Guitar Lessons</option>
+                                                <option value="Gutter Cleaning">Gutter Cleaning</option>
+                                                <option value="Handyman">Handyman</option>
+                                                <option value="House Keeping">House Keeping</option>
+                                                <option value="Landscaping">Landscaping</option>
+                                                <option value="Lawn Care">Lawn Care</option>
+                                                <option value="Moving Assistance">Moving Assistance</option>
+                                                <option value="Moving Assistance with Truck">Moving Assistance with Truck</option>
+                                                <option value="Painting - Artistic">Painting - Artistic</option>
+                                                <option value="Painting - General">Painting - General</option>
+                                                <option value="Pest Removal">Pest Removal</option>
+                                                <option value="Photographer">Photographer</option>
+                                                <option value="Sewing">Sewing</option>
+                                                <option value="Upholstery Repair">Upholstery Repair</option>
+                                                <option value="Professional Hugging">Professional Hugging</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="wageThree">Hourly Rate</label>
+                                            <input type="number" class="form-control" id="wageThree" placeholder="10.00">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="submit" class="btn" id="signup-submit">Submit</button>
+                                        </div>
+                                    </div>
+                        </form>
+                        </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="error-modal-head">
+                    <h5 class="modal-title text-center" id="error-modal-title">Error</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="text-center" id="error-msg">
+                            </div>
+                            <div class="text-center" id="modal-error-btn">
+                                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/signup.js" type="text/javascript"></script>
+</body>
+
+</html>

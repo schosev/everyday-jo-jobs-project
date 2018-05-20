@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Everyday Jo Jobs</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- <link href="/assets/css/style.css" rel="stylesheet"> -->
+    <link href="../public/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Everyday Jo Jobs</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="/profile">View Profile
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link active" href="#">Sign Out</a>
+            </div>
+        </div> -->
+    </nav>
+
+    <main role="main" class="container-fluid main-div">
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div class="card-header text-center">
+                    Existing User Sign In
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="login-email" class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="login-email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="login-password" class="col-sm-3 col-form-label">Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="login-password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn" id="login-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="row" id="login-signup-card">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class="card-header text-center">
+                        New User Sign Up
+                    </div>
+                    <div class="card-body">
+                                <div class="text-center">
+                                    Click the button below to Sign Up
+                                </div>
+                        <div class="text-center" id="login-signup-btn">
+                            <button type="submit" class="btn" id="login-sign-up">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function () {
+            $("#modal-sign-up").on("click", function() {
+                window.location.href = "/signup";
+            });
+        });
+    </script>
+</body>
+</html>
